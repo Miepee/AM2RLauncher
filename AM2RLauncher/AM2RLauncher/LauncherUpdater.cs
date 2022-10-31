@@ -116,7 +116,7 @@ public static class LauncherUpdater
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
         }
 
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://github.com/AM2R-Community-Developers/AM2RLauncher/releases/latest");
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://github.com/Miepee/AM2RLauncher/releases/latest");
         HttpWebResponse response;
         try
         {
@@ -182,9 +182,9 @@ public static class LauncherUpdater
             if (OS.IsWindows) platformSuffix = "_win";
             else if (OS.IsLinux) platformSuffix = "_lin";
 
-            log.Info("Downloading https://github.com/AM2R-Community-Developers/AM2RLauncher/releases/latest/download/AM2RLauncher_" + onlineVersion + platformSuffix + ".zip to " + zipPath + ".");
+            log.Info("Downloading https://github.com/Miepee/AM2RLauncher/releases/latest/download/AM2RLauncher_" + onlineVersion + platformSuffix + ".zip to " + zipPath + ".");
 
-            client.DownloadFile("https://github.com/AM2R-Community-Developers/AM2RLauncher/releases/latest/download/AM2RLauncher_" + onlineVersion + platformSuffix + ".zip", zipPath);
+            client.DownloadFile("https://github.com/Miepee/AM2RLauncher/releases/latest/download/AM2RLauncher_" + onlineVersion + platformSuffix + ".zip", zipPath);
 
             log.Info("File successfully downloaded.");
         }
