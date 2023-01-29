@@ -49,4 +49,5 @@ jobs:
       working-directory: ./AM2RLauncher
       run: dotnet publish ${{ matrix.COMMAND }} -c "${{ matrix.configuration }}"
     - name: test
+      working-directory: ./AM2RLauncher
       run: echo "hi" && ls AM2RLauncher/AM2RLauncher.Mac/bin/Release/net6.0/ && echo "hi2" && ls AM2RLauncher/AM2RLauncher.Mac/bin/Release/net6.0/osx-x64osx-arm64/
