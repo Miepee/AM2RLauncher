@@ -17,7 +17,7 @@ jobs:
             POSTBUILD: echo "No post build to do!"
           - os: macOS-latest
             COMMAND: AM2RLauncher.Mac -o builds/macOS-latest
-            ARTIFACT: AM2RLauncher/AM2RLauncher.Mac/bin/Release/net6.0/osx-x64osx-arm64/
+            ARTIFACT: AM2RLauncher/AM2RLauncher.Mac/bin/Release/net6.0-mac/
             POSTBUILD: echo "No post build to do!"
           - os: windows-latest
             COMMAND: AM2RLauncher.Wpf -r win-x86 
